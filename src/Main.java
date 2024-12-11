@@ -1,11 +1,16 @@
 import java.util.Scanner;
-import java.lang.Math;
 public class Main {
     static void Addition(int a ,int b){
-        System.out.println("La somme est:"+(a + b));
+        System.out.println("La somme est:" +(a + b));
     }
     static void Soustraction(int a ,int b){
-        System.out.println("La soustraction est:"+(a - b));
+        System.out.println("La soustraction est:" +(a - b));
+    }
+    static void Multiplication(int a ,int b){
+        System.out.println("La multiplication est:" +(a * b));
+    }
+    static void Division(int a ,int b){
+        System.out.println("La division est:" +(a / b));
     }
     public static void main(String[] args){
         int choix;
@@ -30,6 +35,10 @@ public class Main {
                 case 1 : Addition(a,b);
                 break;
                 case 2 : Soustraction(a,b);
+                break;
+                case 3 : Multiplication(a,b);
+                break;
+                case 4 : Division(a,b);
                 break;
                 default:
                     System.out.println("Choix invalide!");
