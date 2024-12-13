@@ -18,9 +18,14 @@ public class Main {
         System.out.println("La puissance est:"+ Math.pow (a,b));
     }
     static void Racine(int a ){
-        System.out.println("le racine est: "+ Math.sqrt(a));
+        System.out.println("Le racine est: "+ Math.sqrt(a));
     }
-    static void factoriel(int a) {
+    static void Factoriel(int a) {
+        int i, N = 1;
+        for(i = 1; i <= a; i++){
+            N *= i;
+        }
+        System.out.println("Le factoriel est :"+ N);
     }
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -34,7 +39,7 @@ public class Main {
             System.out.println("5- Puissance");
             System.out.println("6- Racine");
             System.out.println("7- Factoriel");
-            System.out.println("[Entrer votre choix]");
+            System.out.println("{Entrer votre choix}");
             choix = scan.nextInt();
 
             if (choix >= 1 && choix <= 5) {
@@ -72,7 +77,7 @@ public class Main {
                         Racine(a);
                         break;
                     case 7:
-                        factoriel(a);
+                        Factoriel(a);
                         break;
                     default:
                         System.out.println("Choix invalide!");
